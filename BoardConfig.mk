@@ -21,5 +21,8 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
 # inherit from the proprietary version
 -include vendor/meizu/m1973/BoardConfigVendor.mk
