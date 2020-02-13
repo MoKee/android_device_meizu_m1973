@@ -8,3 +8,8 @@ on early-fs
 on post-fs
     mount none /system/lib/hw/android.hardware.power@1.0-impl.m1973.so /vendor/lib/hw/android.hardware.power@1.0-impl.so bind
     mount none /system/lib64/hw/android.hardware.power@1.0-impl.m1973.so /vendor/lib64/hw/android.hardware.power@1.0-impl.so bind
+
+service meizu_charger /system/bin/meizu_charger
+    class charger
+    group system graphics
+    seclabel u:r:charger:s0
