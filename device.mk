@@ -11,7 +11,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-mokee
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
 
 # NFC
 PRODUCT_PACKAGES += \
